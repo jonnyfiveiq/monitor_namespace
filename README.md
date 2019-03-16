@@ -6,10 +6,10 @@ monitor_namespace
 ## Building
 
 `make`
-docker build -t quay.io/jonnyfiveiq/final:latest . -f build/Dockerfile
-kubectl run quaylatest --image=quay.io/jonnyfiveiq/final:latest --image-pull-policy=Never
-kubectl get pods
-kubectl logs quaylatest-584fb685c5-p2kg7
+'docker build -t quay.io/jonnyfiveiq/final:latest . -f build/Dockerfile'
+'kubectl run quaylatest --image=quay.io/jonnyfiveiq/final:latest --image-pull-policy=Never'
+'kubectl get pods'
+'kubectl logs quaylatest-584fb685c5-p2kg7'
 
 
 ## Running
