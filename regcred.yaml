@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: private-reg2
+spec:
+  containers:
+  - name: private-reg-container2
+    image: quay.io/jonnyfiveiq/final:latest
+  imagePullSecrets:
+  - name: regcred2
