@@ -7,6 +7,10 @@ monitor_namespace
 
 `make`
 
+'kubectel create -f regcd.yaml adds quay registry to k8s using local docker.json'
+
+'kubectel create -f https://github.com/jonnyfiveiq/monitor_namespace/blob/master/serviceaccount-rolebinding.yaml'
+
 `docker build -t quay.io/jonnyfiveiq/final:latest . -f build/Dockerfile`
 
 `kubectl run quaylatest --image=quay.io/jonnyfiveiq/final:latest --image-pull-policy=Never`
